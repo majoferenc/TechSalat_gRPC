@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package techsalat;
+
+service TechSalat {
+  rpc GetSalats (SalatRequest) returns (SalatResponse) {}
+}
+
+message SalatRequest {}
+
+message SalatResponse {
+  string message = 1;
+}
